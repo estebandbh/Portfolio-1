@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Montreal_L;
+  src: url("fonts/NeueMontreal-Light.otf");
+}
+
+@font-face {
+  font-family: Montreal_r;
+  src: url("fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+  font-family: Montreal_m;
+  src: url("fonts/NeueMontreal-Medium.otf");
+}
+
+body {
+  font-family: Montreal_r;
+  background-color: #ffffff;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.lista-mobile {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  mix-blend-mode: difference;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: difference;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.lista-menu {
+  display: flex;
+  gap: 4px;
+}
+
+.menu {
+  color: white;
+  display: none;
+}
+
+.lista-menu li a {
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.9px;
+}
+
+.text-header {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.wrapper-img img {
+ width: 500px;
+ height: 250px;
+ object-fit: cover;
+}
+
+
+
+.title-header {
+  font-family: Montreal_r;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.other-text {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.other-text-container {
+  width: 600px;
+}
+
+.other-text-container h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.other-text-container p{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .lista-menu {
+    display: none;
+  }
+
+  .lista-mobile {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: #464d48;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(100%);
+  }
+  .logo-menu {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .ul-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ul-mobile a {
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .social-media a {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .close {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
